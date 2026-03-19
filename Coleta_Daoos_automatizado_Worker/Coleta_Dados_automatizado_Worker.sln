@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coleta_Dados_automatizado_Worker", "Coleta_Daoos_automatizado_Worker\Coleta_Dados_automatizado_Worker.csproj", "{4B626A15-15F5-42D6-8669-CE0F2C23FAB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValoresMoedas_API", "ValoresMoedas\ValoresMoedas_API.csproj", "{F9F3FF9E-32F0-49BE-AE19-CE0744A72BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B626A15-15F5-42D6-8669-CE0F2C23FAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B626A15-15F5-42D6-8669-CE0F2C23FAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B626A15-15F5-42D6-8669-CE0F2C23FAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B626A15-15F5-42D6-8669-CE0F2C23FAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F3FF9E-32F0-49BE-AE19-CE0744A72BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F3FF9E-32F0-49BE-AE19-CE0744A72BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F3FF9E-32F0-49BE-AE19-CE0744A72BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F3FF9E-32F0-49BE-AE19-CE0744A72BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAB71500-352A-4BDB-A2A4-8575769581AB}
+	EndGlobalSection
+EndGlobal

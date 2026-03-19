@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Coleta_Dados_automatizado_Worker": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
