@@ -26,11 +26,8 @@ builder.Services.AddScoped<IMoedaRepository, MoedaRepository>();
 var app = builder.Build();
 
 // 3. CONFIGURAÇÃO DO PIPELINE (A ORDEM IMPORTA!)
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

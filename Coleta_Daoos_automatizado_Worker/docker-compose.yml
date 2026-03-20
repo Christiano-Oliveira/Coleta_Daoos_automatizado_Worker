@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  worker-coleta:
+    container_name: worker_scraping
+    build:
+      context: .
+      dockerfile: Coleta_Daoos_automatizado_Worker/Dockerfile
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+    volumes:
+      - ./database_sqlite:/app/data
+    restart: always
+
+  api-moedas:
+    container_name: api_web
+    build:
+      context: .
+      dockerfile: ValoresMoedas/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5000:80"
+    volumes:
+      - ./database_sqlite:/app/data
+    depends_on:
+      - worker-coleta
+    restart: always

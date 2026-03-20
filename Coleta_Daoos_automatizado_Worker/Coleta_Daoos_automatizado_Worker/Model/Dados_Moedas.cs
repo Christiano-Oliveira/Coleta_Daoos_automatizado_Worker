@@ -22,8 +22,11 @@ namespace Coleta_Dados_automatizado_Worker.Model
             public DbSet<Dados> DadosMoedas { get; set; }
             protected override void OnConfiguring(DbContextOptionsBuilder options)
             {
-                string caminhoBanco = @"C:\Projetos\DadosMoedas.db"; 
-                options.UseSqlite("Data Source=" + caminhoBanco);
+                //Rodar no local
+                //string caminhoBanco = @"C:\Projetos\DadosMoedas.db"; 
+                //options.UseSqlite("Data Source=" + caminhoBanco);
+                //Rodar no Docker
+                options.UseSqlite("Data Source=/app/data/moedas.db");
             }
         }   
     }
