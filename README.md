@@ -2,3 +2,5 @@ Projeto de capitura de dados no site da Uol para avaliar valores de moedas inter
 
 Banco de dados SQLLite c EntityFrameWork
 
+E projeto ja conteinner no Docker
+
